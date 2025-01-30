@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionar Tabela</title>
+</head>
+<body>
+    <h1>Selecionar Tabela</h1>
+    <form action="/query" method="post">
+        <label for="table">Escolha uma tabela:</label>
+        <select name="table" id="table">
+            {{range .Tables}}
+            <option value="{{.}}" {{if eq . $.TableName}}selected{{end}}>{{.}}</option>
+            {{end}}
+        </select>
+        <button type="submit">OK</button>
+    </form>
+
+    {{if .Rows}}
+    <h2>Resultados</h2>
+    <table border="1">
+        <tr>
+            {{range .Columns}}
+            <th>{{.}}</th>
+            {{end}}
+        </tr>
+        {{range .Rows}}
+        <tr>
+            {{range .}}
+            <td>{{.}}</td>
+            {{end}}
+        </tr>
+        {{end}}
+    </table>
+    {{end}}
+</body>
+</html>
