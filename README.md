@@ -18,7 +18,7 @@ Para usar o ProjetoBancoDeDados, siga estes passos:
 Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ## Alunos
-          João Victor Rocha RA: 163837
+          	João Victor Rocha RA: 163837
 	        Lucas Alves Nascimento Marques RA:163911
 	        Marco Antônio Pereira Alves Fonseca RA: 163936
 	        Paulo Roberto Chiaradia Neto RA:156658
